@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title> Advanced Search</title>
     </head>
     <body>
-        <form>
-            <label for="xX4UFf">all these words:</label>
-            <input class="jfk-textinput" value="" autofocus="autofocus" id="xX4UFf" name="as_q" type="text">
+        <form action="https://google.com/search" name="f">
+            <div class="field">
+                <label for="field1">all these words:</label>
+                <input type="text" class="textinput" id="field1" value=""  name="as_q">
+            </div>
             <br>
-            <label for="CwYCWc">this exact word or phrase</label>
-            <input class="jfk-textinput" value="" id="CwYCWc" name="as_epq" type="text">
+            <div class="field">
+                <label for="field2">this exact word or phrase: </label>
+                <input type="text" class="textinput" id="field2" value=""  name="as_epq">
+            </div>
             <br>
-            <label for="mSoczb">any of these words:</label>
-            <input class="jfk-textinput" value="" id="mSoczb" name="as_oq" type="text">
+            <div class="field">
+                <label for="field3">any of this words: </label>
+                <input type="text" class="textinput" id="field3" value=""  name="as_oq">
+            </div>
             <br>
-            <label for="t2dX1c">none of these words:</label>
-            <input class="jfk-textinput" value="" id="t2dX1c" name="as_eq" type="text">
+            <div class="field">
+                <label for="field4">none of these words: </label>
+                <input type="text" class="textinput" id="field4" value=""  name="as_eq">
+            </div>
             <br>
-            <input class="jfk-button jfk-button-action dUBGpe" value="Advanced Search" type="submit">
-        </form>
+            <input type="submit" value="advanced search">
     </body>
 </html>
