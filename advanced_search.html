@@ -2,8 +2,40 @@
 <html lang="en">
     <head>
         <title> Advanced Search</title>
+        <style>
+            .searchButton {
+                background-color: #2a5adf;
+                border: 1px solid #303134;
+                border-radius: 4px;
+                color: #e8eaed;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+            form {
+                display: table;
+            }
+            
+            label {
+                display: table-cell;
+            }
+            input {
+                display: table-cell;
+            }
+            #relink {
+                text-align: right;
+            }
+        </style>
     </head>
     <body>
+        <p id="relink"><a href="index.html">Google Search</a></p>
         <form action="https://google.com/search" name="f">
             <div class="field">
                 <label for="field1">all these words:</label>
@@ -25,6 +57,6 @@
                 <input type="text" class="textinput" id="field4" value=""  name="as_eq">
             </div>
             <br>
-            <input type="submit" value="advanced search">
+            <input class="searchButton" type="submit" value="advanced search">
     </body>
 </html>
