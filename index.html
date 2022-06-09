@@ -2,13 +2,45 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            p {
+                text-align: right;
+            }
+            .searchBox {
+                margin-top: 200px;
+                height: 39px;
+                width: 560px;
+                border-radius: 20px;    
+                background-color: rgb(221, 221, 228);
+            }
+            body {
+                text-align: center;
+            }
+            .searchButton {
+                background-color: #303134;
+                border: 1px solid #303134;
+                border-radius: 4px;
+                color: #e8eaed;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+        </style>
     </head>
     <body>
-        <a href="image_search.html" style="text-align: right;">Google Image Search</a>
-        <a href="advanced_search.html" style="text-align: right;">Google Avanced Search</a>
+        <p><a href="image_search.html">Google Image Search</a></p>
+        <p><a href="advanced_search.html">Google Avanced Search</a></p>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input class="searchBox" type="text" name="q">
+            <br>
+            <input class="searchButton" type="submit" value="Google Search">
         </form>
     </body>
 </html>
